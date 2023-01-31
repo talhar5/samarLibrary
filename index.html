@@ -38,15 +38,17 @@
         </div>
     </nav>
 
+    <!-- alert -->
+    <div id="liveAlertPlaceholder"></div>
+
     <!-- add book form  -->
     <div class="my-3 container">
         <h1>Add a Book</h1>
         <hr>
-        <form>
+        <form id="addBookForm" onsubmit="return false">
             <div class="mb-3">
                 <label for="addBookName" class="form-label">Book Name</label>
-                <input type="text" placeholder="Book Name" class="form-control" id="addBookName"
-                    aria-describedby="bookname">
+                <input type="text" placeholder="Book Name" class="form-control" id="addBookName">
             </div>
             <div class="mb-3">
                 <label for="addBookAuthor" class="form-label">Author</label>
@@ -86,14 +88,7 @@
                     <th scope="col">Handle</th>
                 </tr>
             </thead>
-            <tbody class="tableBody">
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-            </tbody>
+            <tbody id="tableBody" class="tableBody"></tbody>
         </table>
     </div>
 
